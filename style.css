@@ -1,8 +1,57 @@
+@font-face{
+    font-family: "Mystery";
+    src: url(/fonts/mysteryfont.woff2) format('woff2'); 
+}
+
+@font-face{
+    font-family: "haffer";
+    src: url(/fonts/haffer-medium.woff2) format('woff2'); 
+}
+
+@font-face{
+    font-family: "fk screamer";
+    src: url(/fonts/fk-screamer-upright.woff2) format('woff2'); 
+}
+
+@font-face{
+    font-family: "tobias-regular";
+    src: url(/fonts/tobias-regular.woff2) format('woff2'); 
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    #31a493 37%,
+    #e47bc7 46%,
+    #31a493 60%,
+    #31a493 63%,
+    #ff78e6 72%,
+    #ff743c 78%,
+    #ff78e7 92%
+  );
+}
+
+#faqpagina {
+  background: linear-gradient(
+    to bottom,
+    #ce5eff 20%
+  )
+}
+
 header {
   position: relative;
   width: 100%;
   height: 100vh; 
   overflow: hidden;
+  background: none;
 }
 
 header .bg-video {
@@ -26,23 +75,41 @@ header .header-content {
 }
 
 header img{
-    width: 250px;
-    margin-top: 32px;
+  position: fixed;
+  width: 150px;
+  margin-top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+  background: linear-gradient(to top, #31a493, transparent);
 }
 
 .menu-bar {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   gap: 1em;
+  z-index: 10002;
 }
 
 .menu-bar .hamburger {
   display: grid;
   place-items: center;
-  border-radius: 50%;
-  width: 3em;
-  height: 3em;
-  background: #f8f08f; 
+  border-radius: 50px;
+  width: 46px;
+  height: 46px;
+  background: #ffff7b; 
   border: none;
   cursor: pointer;
 }
@@ -50,10 +117,10 @@ header img{
 .menu-bar .hamburger span {
   grid-row: 1;
   grid-column: 1;
-  width: 1.4em;
-  height: 0.2em;
+  width: 1em;
+  height: 0.18em;
   background-color: #000;
-  border-radius: 2px;
+  border-radius: 1px;
   transition: transform 0.5s, opacity 0.5s;
 }
 
@@ -78,47 +145,83 @@ header img{
 }
 
 .preregisterfor2027{
-    background-color: #313f68;
-    color: white;
-    font-size: 17px;
-    line-height: 20.4px;
-    margin: 10px 15px;
-    padding: 10px 24px;
-    border: 1px solid #313f68;
-    border-radius: 8px;
+  background-color: #313f68;
+  font-family: "haffer";
+  color: white;
+  font-size: 17px;
+  line-height: 20.4px;
+  margin: 10px 15px;
+  padding: 10px 24px;
+  padding-bottom: 8px;
+  border: 1px solid #313f68;
+  border-radius: 8px;
+}
+
+.subscribe{
+  background-color: transparent;
+  font-family: "haffer";
+  color: white;
+  font-size: 16px;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  line-height: 20.4px;
+  padding: 8px 12px 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 7.2em;
+}
+
+.subscribe svg{
+  height: 8px;
+  padding-right: 5px;
 }
 
 .menu-bar .pre-register {
-  background: #f8f08f;
+  background: #ffff7b;
   border: none;
-  border-radius: 0.75em;
-  padding: 0.6em 1.4em;
-  font-weight: 900;
-  font-family: sans-serif;
-  font-size: 1em;
+  border-radius: 10px;
+  line-height: 1.25;
+  padding: 8px 15px;
+  font-family: "fk screamer";
+  font-size: 24px;
   color: #000;
   cursor: pointer;
 }
 
 h1{
-    color: #f8f08f;
-    font-size: 80px;
-    line-height: 100px;
-    margin-bottom: 32px;
-    text-align: center;
+  font-family: "Mystery";
+  color: #ffff7b;
+  display: inline-block;
+  font-size: 80px;
+  line-height: 70px;
+  margin-bottom: 32px;
+  text-align: center;
+  padding-top: 2.31em;
+}
+
+#faqpagina h1{
+  color: #ffff7b;
+  font-size: 9em;
+  padding-top: 0.18em;
+  margin: 0;    
 }
 
 .seeyouin2027 {
-    max-width: 90%;
-    margin: 20px;
-    border-radius: 20px; 
+  max-width: 90%;
+  margin: 16px;
+  border-radius: 20px; 
+  height: 27.5em;
+  margin-top: 5em;
 }
 
 h3{
-    font-size: 36px;
-    line-height: 31px;
-    margin-bottom: 16px;
-    text-align: center;
+  font-family: "fk screamer";
+  font-size: 36px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: white;
 }
 
 p{
@@ -128,26 +231,256 @@ p{
 }
 
 h2{
-    font-size: 80px;
-    line-height: 70px;
-    text-align: center;
+  font-family: "Mystery";
+  font-size: 80px;
+  line-height: 70px;
+  text-align: center;
+  color: white;
+  margin-top: 2em;
+  margin-bottom: 24px;
 }
 
 h4{
-    font-family: fk-screamer-upright, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 31px;
-    margin-bottom: 16px;
-    text-align: center;
+  font-family: "fk screamer";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#faqpagina main h4 {
+  text-align: left;
+  margin-left: 1em;
+}
+
+#faqpagina main p {
+  text-align: left;
+}
+
+main p{
+  line-height: 20px;
+  text-align: center;
+  font-family: "haffer";
+  font-size: 16px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin-bottom: 1em;
+  color: #ffffff;
 }
 
 footer p{
-    font-family: tobias-regular-italic, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17px;
-    margin-bottom: 32px;
-    text-align: center;
+  font-family: "tobias-regular";
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 17px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.gradient-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.gradient-overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.image-carousel {
+  width: 100%;
+  margin-top: 11.3em;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 0 10%; 
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-track img {
+  width: 100%;
+  height: 19.5em;
+  flex: 0 0 70%; /* kleiner maken: 70% van de container */
+  border-radius: 1.5rem;
+  scroll-snap-align: center;
+  cursor: pointer;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 250px;
+  flex-wrap: wrap; 
+  margin-top: 0.5em;
+}
+
+footer ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul li svg {
+  width: 20px; /* uit je grid code */
+  height: auto;
+  fill: #ededed;
+}
+
+.footer__partners--idt {
+  width: 47px;
+  height: 35px;
+  display: block;
+  margin: 2rem auto 1.5rem auto;
+}
+
+.spotify-icon{
+  display: flex;
+  justify-content: center;
+}
+
+.spotify-icon svg{
+  width: 21.5px;
+  height: 21.5px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 12em;
+  max-width: 340px;
+}
+
+.footer-links li:not(:last-child)::after {
+  content: "|"; 
+  margin-left: 0.5em;
+  color: white;
+}
+
+.footer-links a {
+  text-decoration: none;
+  font-family: "haffer";
+  font-size: 16px;
+  color: white;
+}
+
+.menu-scherm {
+  position: fixed;
+  inset: 0;                 
+  background-color: #feff7b; 
+  display: none;
+  justify-content: center;
+  z-index: 999;
+  color: #313f68;
+  font-family: "haffer";
+  font-size: 32px;
+}
+
+.menu-scherm.aan {
+    display: flex;
+}
+
+.menu-inhoud nav ul {
+  list-style: none;
+  margin-top: 4.3em;
+  text-align: center;
+}
+
+.menu-inhoud img {
+  margin-top: 1.25em;
+}
+
+.menu-inhoud nav a {
+  font-size: 1.75em;
+  font-family: "Mystery";
+  text-decoration: none;
+  color: #313f68;
+}
+
+.menu-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2.5em;
+}
+
+.menu-socials ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-socials li {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-socials svg {
+  width: 24px;
+  height: auto;
+}
+
+.animatie {
+  display: flex;
+  padding-top: 27em;
+  gap: 12em; 
+  width: 120%;
+  white-space: nowrap; 
+  position: absolute;
+  transform: translateY(-50%) translateX(100%);
+  animation: scroll-faq 8s linear infinite;
+}
+
+.animatie img.faq-gif {
+  position: static;
+  height: 7.2em;
+  width: auto;
+  display: inline-block;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-faq {
+  0% {
+    transform: translateY(-50%) translateX(100%); /* start buiten rechts */
+  }
+  100% {
+    transform: translateY(-50%) translateX(-100%); /* eind links buiten beeld */
+  }
 }
 
