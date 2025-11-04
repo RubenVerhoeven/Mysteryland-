@@ -1,0 +1,1177 @@
+:root {
+  --kleur-geel: #ffff7b;
+  --kleur-donkerblauw: #313f68;
+  --kleur-wit: #ffffff;
+  --kleur-lichtgrijs: #ededed;
+  
+  --font-mystery: "Mystery";
+  --font-haffer: "haffer";
+  --font-screamer: "fk screamer";
+  --font-tobias: "tobias-regular";
+  --font-raleway: "Raleway";
+}
+
+/*  Studentassistent Damian heeft me geholpen om de Fonts van de echte mysteryland website
+te krijgen en heeft me geholpen om deze te importeren naar mijn CSS via het mapje Fonts
+met hierin de gedownloade Fonts */
+@font-face{
+    font-family: "Mystery";
+    src: url(/fonts/mysteryfont.woff2) format('woff2'); 
+}
+
+@font-face{
+    font-family: "haffer";
+    src: url(/fonts/haffer-medium.woff2) format('woff2'); 
+}
+
+@font-face{
+    font-family: "fk screamer";
+    src: url(/fonts/fk-screamer-upright.woff2) format('woff2'); 
+}
+
+@font-face{
+    font-family: "tobias-regular";
+    src: url(/fonts/tobias-regular.woff2) format('woff2'); 
+}
+
+@font-face{
+    font-family: "Raleway";
+    src: url(/fonts/raleway_medium.woff2) format('woff2'); 
+}
+
+/*  Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom 
+ik vroeg hem namenlijk hoe ik die border rand om mijn video weg kreeg */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* https://cssgradient.io/ */
+body {
+  background: linear-gradient(
+    to bottom,
+    #31a493 37%,
+    #e47bc7 46%,
+    #31a493 60%,
+    #31a493 63%,
+    #ff78e6 72%,
+    #ff743c 78%,
+    #ff78e7 92%
+  );
+}
+
+header img {
+  position: fixed;
+  width: 9.375rem;
+  margin-top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#pauzeKnop {
+  position: absolute;
+  top: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 1.8rem;
+  background: linear-gradient(135deg, #007BFF, #00FFD1); /* https://cssgradient.io/ */
+  color: var(--kleur-wit);
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.3);
+  z-index: 2;
+}
+
+body > section:nth-of-type(1) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3.75rem;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* https://cssgradient.io/ */
+}
+
+header > section:nth-of-type(1) {
+  position: fixed;
+  inset: 0;                 
+  background-color: #feff7b; 
+  display: none;
+  justify-content: center;
+  color: var(--kleur-donkerblauw);
+  font-family: var(--font-haffer);
+  font-size: 2rem;
+  z-index: 3;
+}
+
+header > section:nth-of-type(1).aan {
+  display: flex;
+}
+
+.lettergrootte {
+  margin: 1rem 0;
+  color: var(--kleur-donkerblauw);
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family: var(--font-screamer);
+}
+
+#fontSizeSlider {
+    width: 6.25rem;
+}
+
+
+header > section:nth-of-type(1) article:nth-of-type(1) nav ul {
+  list-style: none;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  z-index: -1;
+}
+
+header > section:nth-of-type(1) article:nth-of-type(1) img {
+  margin-top: 2rem;
+}
+
+header > section:nth-of-type(1) article:nth-of-type(1) nav a {
+  font-size: 3.5rem;
+  font-family: var(--font-mystery);
+  text-decoration: none;
+  color: var(--kleur-donkerblauw);
+}
+
+header article section {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0rem;
+}
+
+header article section ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header article section li {
+  display: flex;
+  justify-content: center;
+}
+
+header article section svg {
+  width: 1.5rem;
+  height: auto;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+  background: none;
+}
+
+header > section:nth-of-type(2) {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+header > section:nth-of-type(2) button {
+  background-color: var(--kleur-donkerblauw);
+  font-family: var(--font-haffer);
+  color: var(--kleur-wit);
+  font-size: 1.0625rem;
+  line-height: 1.275rem;
+  margin: 0.625rem 0.9375rem;
+  padding: 0.625rem 1.5rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid var(--kleur-donkerblauw);
+  border-radius: 0.5rem;
+}
+
+header > section:nth-of-type(3) {
+  position: fixed;
+  width: 100%;
+  bottom: 2.3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 4;
+}
+
+header > section:nth-of-type(3) button:nth-of-type(2) {
+  background: var(--kleur-geel);
+  border: none;
+  border-radius: 0.625rem;
+  line-height: 1.25;
+  padding: 0.5rem 0.9375rem;
+  font-family: var(--font-screamer);
+  font-size: 1.5rem;
+  color: #000;
+  cursor: pointer;
+}
+
+header > section:nth-of-type(3) button:nth-of-type(1) {
+  display: grid;
+  place-items: center;
+  border-radius: 3.125rem;
+  width: 2.875rem;
+  height: 2.875rem;
+  background: var(--kleur-geel); 
+  border: none;
+  cursor: pointer;
+}
+
+header > section:nth-of-type(3) button:nth-of-type(1) span {
+  grid-row: 1;
+  grid-column: 1;
+  width: 1rem;
+  height: 0.18rem;
+  background-color: #000;
+  border-radius: 1px;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+/* Microanimatie gemaakt met Codepen, Hambruger-1 nagemaakt, https://codepen.io/RRoberts/pen/ZBYaJr */
+header > section:nth-of-type(3) button:nth-of-type(1) span:nth-of-type(1) {
+  transform: translateY(-0.4rem);
+}
+
+header > section:nth-of-type(3) button:nth-of-type(1) span:nth-of-type(3) {
+  transform: translateY(0.4rem);
+}
+
+header > section:nth-of-type(3) button:nth-of-type(1)[aria-expanded="true"] span:nth-of-type(1) {
+  transform: rotate(45deg);
+}
+header > section:nth-of-type(3) button:nth-of-type(1)[aria-expanded="true"] span:nth-of-type(2) {
+  opacity: 0;
+}
+header > section:nth-of-type(3) button:nth-of-type(1)[aria-expanded="true"] span:nth-of-type(3) {
+  transform: rotate(-45deg);
+}
+/* EINDE MICROANIMATIE */
+
+/* Image Carrousel gemaakt met behulp van ChatGPT, https://chatgpt.com */
+main img:nth-of-type(1) {
+  max-width: 90%;
+  margin: 1rem;
+  border-radius: 1.25rem; 
+  height: 27.5rem;
+  margin-top: 5rem;
+}
+
+main > section:nth-of-type(1) {
+  width: 100%;
+  margin-top: 11.3rem;
+  overflow: hidden;
+}
+
+main > section:nth-of-type(1) article {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 0 10%; 
+}
+
+main > section:nth-of-type(1) article::-webkit-scrollbar {
+  display: none;
+}
+
+main > section:nth-of-type(1) article img:first-child {
+  margin: 0;
+}
+
+main > section:nth-of-type(1) article img {
+  width: 100%;
+  height: 19.5rem;
+  flex: 0 0 70%;
+  border-radius: 1.5rem;
+  scroll-snap-align: center;
+  cursor: pointer;
+  object-fit: cover;
+}
+/* EINDE IMAGE CARROUSEL */
+
+#homepagina main button{
+  background-color: transparent;
+  font-family: var(--font-haffer);
+  color: var(--kleur-wit);
+  font-size: 1rem;
+  border: 1px solid var(--kleur-lichtgrijs);
+  border-radius: 0.625rem;
+  line-height: 1.275rem;
+  padding: 0.5rem 0.75rem 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 7.2rem;
+}
+
+main button svg{
+  height: 0.5rem;
+  padding-right: 0.3125rem;
+}
+
+footer > svg:nth-of-type(1) {
+  display: block;
+  margin: 0 auto;
+  width: 1.34375rem;
+  height: 1.34375rem;
+}
+
+footer > svg:nth-of-type(2) {
+  width: 2.9375rem;
+  height: 2.1875rem;
+  display: block;
+  margin: 2rem auto 1.5rem auto;
+}
+
+#faqpagina {
+  /* https://cssgradient.io/ */
+  background: linear-gradient(
+    to bottom,
+    #f07a58 2%,
+    #d25dfd 7%,
+    #d25dfd 26%,
+    #ff78e6 36%,
+    #5f9dab 43%,
+    #ff78e6 47%,
+    #ff78e6 60%,
+    #ff743c 69%,
+    #ff743c 76%,
+    #ff78e7 86%
+    
+  );
+}
+
+#faqpagina header {
+  height: auto !important;
+  overflow: visible;
+}
+
+#faqpagina header a img {
+  position: fixed;
+  width: 9.375rem;
+  margin-top: -4.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#faqpagina header > section:nth-of-type(1) img {
+  position: fixed !important;
+  margin-top: 2.5rem !important;
+  width: 9.375rem;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+#faqpagina .faq-gif {
+  position: relative !important;
+  transform: none !important;
+  left: auto !important;
+}
+
+#faqpagina .carousel {
+  flex-direction: row !important;
+}
+
+/* Infinity carrousel gemaakt met behulp van Youtube, Damian de studentassistent 
+had me via Teams deze video gedeeld en hiermee is het me gelukt om de animatie te 
+laten werken "Build Infinite Carousel Animations in 4 Minutes: https://www.youtube.com/watch?v=KD1Yo8a_Qis" */
+/* === BEGIN CAROUSEL === */
+.carousel {
+  overflow: hidden;
+  display: flex;
+  width: 100vw;
+  margin-top: 7rem;
+  margin-bottom: 22rem;
+}
+
+.group {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 1rem;
+  animation: scroll 18s linear infinite;
+  min-width: 100%;
+}
+
+#faqpagina h1 {
+  color: var(--kleur-geel);
+  font-size: 9rem;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.faq-gif {
+  width: 20rem;
+  height: auto;
+  flex-shrink: 0;
+  margin-right: 1rem;
+  padding: 0;
+  display: block;
+}
+
+@keyframes scroll {
+  from { 
+    transform: translateX(0); 
+  }
+  to { 
+    transform: translateX(-100%); 
+  }
+}
+
+/* === EINDE CAROUSEL === */
+
+#faqpagina main section {
+  border-bottom: 1px solid rgba(211, 211, 211, 0.3);
+}
+
+#faqpagina main section:last-of-type {
+  border-bottom: none;
+}
+
+#faqpagina main section button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  text-align: left;
+  margin-bottom: 0rem;
+}
+
+#faqpagina main section button svg {
+  width: 1.1rem;
+  height: auto;
+  margin-right: 2.3rem;
+  transition: transform 0.3s ease;
+}
+
+#faqpagina main section article {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0;
+}
+
+#faqpagina main section article.active {
+  max-height: 125rem;
+  padding: 1rem 0;
+}
+
+#faqpagina main section article svg {
+  transform: rotate(180deg); 
+}
+
+/* Ik heb deze gradient aan de onderkant van mijn header gemaakt met behulp van ChatGPT, https://chatgpt.com/ */
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8.75rem;
+  background: linear-gradient(to top, #31a493, transparent);
+}
+
+
+#faqpagina header::after {
+  content: none; /* hier uitgezet want ik wil de turquoise transparante gradient overlay niet op de FAQ pagina */
+}
+
+h1{
+  position: relative;
+  font-family: var(--font-mystery);
+  color: var(--kleur-geel);
+  display: inline-block;
+  font-size: 5rem;
+  line-height: 4.375rem;
+  margin-top: 1.85em;
+  margin-bottom: 2rem;  
+  text-align: center;
+  padding-top: 2.31rem;
+  z-index: -12;
+}
+
+h3{
+  font-family: var(--font-screamer);
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--kleur-wit);
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+h2{
+  font-family: var(--font-mystery);
+  font-size: 5rem;
+  line-height: 4.375rem;
+  text-align: center;
+  color: var(--kleur-wit);
+  margin-top: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+#faqpagina h2 {
+  font-family: var(--font-mystery);
+  font-size: 5rem;
+  line-height: 4.375rem;
+  text-align: center;
+  color: var(--kleur-wit);
+  margin-top: 15rem;
+  margin-bottom: 1.5rem;
+}
+
+#faqpagina main span {
+  font-family: var(--font-screamer);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.9375rem;
+  text-align: center;
+  color: var(--kleur-wit);
+  margin-left: 1.5rem;
+}
+
+h4 {
+  font-family: var(--font-screamer);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.9375rem;
+  text-align: center;
+  color: var(--kleur-wit);
+}
+
+h5{
+  color: #1C2248;
+  line-height: 1.25;
+  font-family: var(--font-raleway);
+  font-size: 1.5rem;
+  text-transform: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+a{
+  color: var(--kleur-wit);
+}
+
+#faqpagina main h4 {
+  text-align: left;
+  margin-left: 1.5rem;
+}
+
+#faqpagina main p {
+  text-align: left;
+}
+
+#faqpagina main p.tekst_centreren {
+  text-align: center;
+}
+
+main p{
+  line-height: 1.25rem;
+  text-align: center;
+  font-family: var(--font-haffer);
+  font-size: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--kleur-wit);
+}
+
+#faqpagina main button{
+  background-color: transparent;
+  font-family: var(--font-haffer);
+  color: var(--kleur-wit);
+  font-size: 1rem;
+  border: 1px solid var(--kleur-lichtgrijs);
+  border-radius: 0.625rem;
+  line-height: 1.275rem;
+  padding: 0.5rem 0.75rem 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 7.2rem;
+}
+
+footer p{
+  font-family: var(--font-tobias);
+  font-size: 0.875rem;
+  color: var(--kleur-wit);
+  font-weight: 500;
+  line-height: 1.0625rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* https://chatgpt.com/ */
+.gradient-overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 12.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 15.625rem;
+  flex-wrap: wrap; 
+  margin-top: 0.5rem;
+}
+
+footer ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul li svg {
+  width: 1.25rem; 
+  height: auto;
+  fill: var(--kleur-lichtgrijs);
+}
+
+footer ul:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 12rem;
+  max-width: 21.25rem;
+}
+
+footer ul:nth-of-type(2) li:not(:last-child)::after {
+  content: "|"; 
+  margin-left: 0.5rem;
+  color: var(--kleur-wit);
+}
+
+footer ul:nth-of-type(2) li a {
+  text-decoration: none;
+  font-family: var(--font-haffer);
+  font-size: 1rem;
+  color: var(--kleur-wit);
+}
+
+/* pop up gedeelte */
+body > section.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: #1d1d26;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+body > section.overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+body > section.overlay > section:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  position: relative;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body > section.overlay > section:nth-of-type(1) > button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  border: 2px solid var(--kleur-wit);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+body > section.overlay > section:nth-of-type(1) > button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: var(--kleur-wit);
+}
+
+body > section.overlay > section:nth-of-type(1) > section:nth-of-type(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body > section.overlay > section:nth-of-type(1) > section:nth-of-type(1) > img {
+  width: 3rem;
+  height: auto;
+  position: relative;
+  margin-top: 0;
+  transform: none;
+  left: auto;
+}
+
+body > section.overlay > section:nth-of-type(1) > section:nth-of-type(1) > section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+body > section.overlay > section:nth-of-type(1) > section:nth-of-type(1) > section > button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 1px solid var(--kleur-wit);
+  border-radius: 3rem;
+  padding: 0.5rem 1rem;
+  color: var(--kleur-wit);
+  font-family: var(--font-haffer);
+  font-size: 1.125rem;
+}
+
+body > section.overlay > section:nth-of-type(1) > section:nth-of-type(1) > section > button svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  stroke: var(--kleur-wit);
+}
+
+body > section.overlay > section:nth-of-type(1) > section:nth-of-type(1) > section > section {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.5rem;
+  background: #2a2a35;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  min-width: 12.5rem;
+}
+
+body > section.overlay > section:nth-of-type(1) > section:nth-of-type(1) > section > section.active {
+  display: flex;
+}
+
+body > section.overlay > section:nth-of-type(1) > section:nth-of-type(1) > section > section button {
+  background: transparent;
+  border: none;
+  color: var(--kleur-wit);
+  font-family: var(--font-haffer);
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  text-align: left;
+}
+
+body > section.overlay > section:nth-of-type(1) > section:nth-of-type(2) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 100%;
+  width: 100%;
+  padding: 1rem 1rem;
+}
+
+body > section.overlay > section:nth-of-type(1) > section:nth-of-type(2) h2 {
+  font-family: var(--font-haffer);
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--kleur-wit);
+  margin-bottom: 1rem;
+  text-align: left;
+  width: 100%;
+  margin-top: 0;
+}
+
+body > section.overlay > section:nth-of-type(1) > section:nth-of-type(2) form {
+  width: 100%;
+}
+
+body > section.overlay > section:nth-of-type(1) > section:nth-of-type(2) form label {
+  display: block;
+  font-family: Open Sans, sans-serif;
+  font-size: 1.125rem;
+  color: var(--kleur-wit);
+  margin-bottom: 0.8rem;
+}
+
+body > section.overlay > section:nth-of-type(1) > section:nth-of-type(2) form input {
+  width: 100%;
+  padding: 0.8rem;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.3rem;
+  background-color: #2f2f37;
+  color: var(--kleur-wit);
+  font-family: Open Sans, sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+body > section.overlay > section:nth-of-type(1) > section:nth-of-type(2) form input:focus {
+  outline: none;
+  border-color: var(--kleur-wit);
+}
+
+body > section.overlay > section:nth-of-type(1) > section:nth-of-type(2) form button {
+  width: 100%;
+  padding: 0.8rem 2rem;
+  background: var(--kleur-wit);
+  border: none;
+  border-radius: 1.875rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1d1d26;
+}
+
+body > section.overlay > section:nth-of-type(1) > section:nth-of-type(2) form button:hover {
+  transform: scale(1.02);
+}
+
+#faqpagina body > section.overlay > section:nth-of-type(1) > section:nth-of-type(2) h2,
+body > section.overlay > section:nth-of-type(1) > section:nth-of-type(2) h2 {
+  font-family: Open Sans Condensed, sans-serif !important;
+  font-size: 1.15rem !important;
+  font-weight: bold !important;
+  color: var(--kleur-wit) !important;
+  margin-bottom: 1rem !important;
+  text-align: left !important;
+  width: 100% !important;
+  margin-top: 0.7rem !important;
+  line-height: normal !important;
+}
+
+/* Newsletter Popup Overlay */
+.newsletter-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 10000;
+  backdrop-filter: blur(0.625rem);
+  -webkit-backdrop-filter: blur(0.625rem);
+}
+
+.newsletter-overlay.active {
+  display: flex;
+}
+
+.newsletter-popup {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 75vh;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(1.875rem);
+  -webkit-backdrop-filter: blur(1.875rem);
+  border-radius: 1.25rem 1.25rem 0 0;
+  box-shadow: 0rem -0.25rem 1.25rem rgba(0, 0, 0, 0.15);
+  padding: 1.875rem 1.25rem 0;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  overflow-y: auto;
+}
+
+.newsletter-popup.active {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.newsletter-popup::before {
+  content: "";
+  display: block;
+  width: 3.75rem;
+  height: 0.3125rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.3125rem;
+  margin: 0 auto 1.25rem auto;
+}
+
+.taalkeuze {
+  position: sticky;
+  top: 0;
+  padding: 0.625rem 0;
+  margin: -0.625rem 0 1rem 0;
+  z-index: 10;
+}
+
+.taal_selecteren {
+  padding: 0.25rem 1.25rem;
+  border-radius: 0.3125rem;
+  border: 1px solid rgba(0, 0, 0, 0);
+  font-size: 0.875rem;
+  background: rgba(255, 255, 255);
+}
+
+.newsletter-popup h5 {
+  color: #1C2248;
+  line-height: 1.25;
+  font-family: var(--font-raleway);
+  font-size: 1.5rem;
+  text-transform: none;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter-popup p {
+  color: #1C2248;
+  font-family: var(--font-haffer);
+  line-height: 1.25;
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.875rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.9375rem;
+  background: rgba(255, 255, 255, 0.9);
+  font-family: var(--font-haffer);
+}
+
+.input-field::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.schakelaar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.schakelaar p {
+  font-size: 0.8125rem;
+  color: #1C2248;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.schakelaar_switch {
+  position: relative;
+  display: inline-block;
+  width: 2.875rem;
+  height: 1.5rem;
+  margin-left: 0.625rem;
+  flex-shrink: 0;
+}
+
+.schakelaar_switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .3);
+  transition: 0.3s;
+  border-radius: 1.5rem;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.125rem;
+  width: 1.125rem;
+  left: 0.1875rem;
+  bottom: 0.1875rem;
+  background-color: rgba(0, 0, 0, .3);
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.schakelaar_switch input:checked + .slider {
+  background-color: var(--kleur-donkerblauw);
+}
+
+.schakelaar_switch input:checked + .slider:before {
+  transform: translateX(1.375rem);
+  background-color: var(--kleur-wit);
+}
+
+.continue-btn {
+  padding: 0.875rem 2.1875rem;
+  font-size: 1rem;
+  border-radius: 1.875rem;
+  border: none;
+  background: #aaa;
+  color: var(--kleur-wit);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  cursor: not-allowed;
+  font-family: var(--font-haffer);
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.continue-btn:not(:disabled) {
+  background: #1C2248;
+  color: var(--kleur-wit);
+  cursor: pointer;
+}
+
+.continue-btn:not(:disabled):hover {
+  background: #2a3458;
+}
+
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(to right, #ff743c 0%, #d25dfd 60%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 20000;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.loading-screen.active {
+  display: flex;
+}
+
+.loading-screen.fade-out {
+  opacity: 0;
+}
+
+.loading-screen img {
+  width: 10rem;
+  height: auto;
+  animation: fadeInOut 1s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Scroll animatie gemaakt met behulp van ChatGPT */
+.scroll-animatie {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-animatie.zichtbaar {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Verschillende delays voor een cascading effect */
+main p:nth-of-type(1).scroll-animatie {
+  transition-delay: 0.1s;
+}
+
+main p:nth-of-type(2).scroll-animatie {
+  transition-delay: 0.2s;
+}
+
+main p:nth-of-type(3).scroll-animatie {
+  transition-delay: 0.3s;
+}
+
+main img.scroll-animatie {
+  transition-delay: 0.2s;
+}
+
+main button.scroll-animatie {
+  transition-delay: 0.4s;
+}
