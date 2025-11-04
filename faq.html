@@ -7,139 +7,209 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body id="faqpagina">
-    <div class="gradient-top"></div>
+    <section>
+        <h2 class="visually-hidden">Donkere overlay boven</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+    </section>
     <header>
-        <div class="menu-scherm">
-            <div class="menu-inhoud">
+        <section>
+            <h2 class="visually-hidden">Navigatie menu</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+            <article>
                 <a href="index.html">
-                    <img src="images/mystery_logo_blauw.png" alt="">
+                    <img src="images/mystery_logo_blauw.png" alt="Mysteryland logo blauw">
                 </a>
                 <nav>
                     <ul>
                         <li><a href="#">THIS IS <br> MYSTERYLAND</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">MERCHANDISE</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="https://store.mysteryland.nl/?_gl=1*1ladkko*_ga*ODg3MjcyNzIzLjE3NTY4ODY4Mzk.*_ga_4S17B278D2*czE3NTg3MzMzNTUkbzI5JGcxJHQxNzU4NzMzNjM5JGo2MCRsMCRoMA..&_ga=2.25890746.626982404.1758545531-887272723.1756886839">MERCHANDISE</a></li>
                     </ul>
                 </nav>
-
-                <div class="menu-socials">
+                <div class="lettergrootte">
+                    <label for="fontSizeSlider">Font Size:</label>
+                    <input type="range" id="fontSizeSlider" min="12" max="24" value="16">
+                </div>
+                <section>
+                    <h2 class="visually-hidden">Social media links</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
                     <ul>
                         <li> 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="26" fill="none" class="facebook"><path fill="#EDEDED" d="M4.922 25h4.406V14.266h3.422L13.313 10H9.328V7.047c0-.688.125-1.188.375-1.5.313-.375.89-.563 1.735-.563h2.25V1.188C12.844 1.063 11.75 1 10.405 1c-1.656 0-2.984.492-3.984 1.477-1 .984-1.5 2.367-1.5 4.148V10h-3.61v4.266h3.61V25Z"></path></svg> 
+                           <svg xmlns="http://www.w3.org/2000/svg" width="15" height="26" fill="none" class="expanded-menu__facebook"><path fill="#313f68" d="M4.922 25h4.406V14.266h3.422L13.313 10H9.328V7.047c0-.688.125-1.188.375-1.5.313-.375.89-.563 1.735-.563h2.25V1.188C12.844 1.063 11.75 1 10.405 1c-1.656 0-2.984.492-3.984 1.477-1 .984-1.5 2.367-1.5 4.148V10h-3.61v4.266h3.61V25Z"></path></svg>
                         </li> 
                         <li> 
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" fill="none" class="instagram"><g clip-path="url(#z)"><path fill="#EDEDED" d="M10.5 5.11c.969 0 1.867.242 2.695.726a5.406 5.406 0 0 1 1.969 1.969c.484.828.727 1.726.727 2.695 0 .969-.243 1.867-.727 2.695a5.405 5.405 0 0 1-1.969 1.969 5.245 5.245 0 0 1-2.695.727 5.245 5.245 0 0 1-2.695-.727 5.406 5.406 0 0 1-1.97-1.969A5.246 5.246 0 0 1 5.11 10.5c0-.969.243-1.867.727-2.695a5.407 5.407 0 0 1 1.969-1.97A5.246 5.246 0 0 1 10.5 5.11Zm0 8.906c.969 0 1.797-.344 2.484-1.032a3.386 3.386 0 0 0 1.032-2.484c0-.969-.344-1.797-1.032-2.484A3.386 3.386 0 0 0 10.5 6.984c-.969 0-1.797.344-2.484 1.032A3.386 3.386 0 0 0 6.984 10.5c0 .969.344 1.797 1.032 2.484a3.386 3.386 0 0 0 2.484 1.032Zm6.89-9.141a1.46 1.46 0 0 1-.398.89c-.234.25-.523.376-.867.376s-.64-.125-.89-.375a1.217 1.217 0 0 1-.376-.891c0-.344.125-.64.375-.89s.547-.376.891-.376.64.125.89.375.376.547.376.891Zm3.563 1.266c.031.875.047 2.328.047 4.359s-.023 3.492-.07 4.383c-.047.89-.18 1.664-.399 2.32a5.462 5.462 0 0 1-1.289 2.04 5.462 5.462 0 0 1-2.039 1.288c-.656.219-1.43.352-2.32.399-.89.047-2.352.07-4.383.07s-3.492-.023-4.383-.07c-.89-.047-1.664-.196-2.32-.446a4.996 4.996 0 0 1-2.04-1.242A5.463 5.463 0 0 1 .47 17.203c-.219-.656-.352-1.43-.399-2.32C.023 13.993 0 12.53 0 10.5s.023-3.492.07-4.383c.047-.89.18-1.664.399-2.32.281-.781.71-1.461 1.289-2.04A5.463 5.463 0 0 1 3.797.47C4.453.25 5.227.117 6.117.07 7.007.023 8.47 0 10.5 0s3.492.023 4.383.07c.89.047 1.664.18 2.32.399.781.281 1.461.71 2.04 1.289a5.462 5.462 0 0 1 1.288 2.039c.219.656.36 1.437.422 2.344Zm-2.25 10.547c.188-.532.313-1.375.375-2.532.031-.687.047-1.656.047-2.906v-1.5c0-1.281-.016-2.25-.047-2.906-.062-1.188-.187-2.032-.375-2.532-.375-.968-1.047-1.64-2.015-2.015-.5-.188-1.344-.313-2.532-.375a68.388 68.388 0 0 0-2.906-.047h-1.5c-1.25 0-2.219.016-2.906.047-1.157.062-2 .187-2.532.375-.968.375-1.64 1.047-2.015 2.015-.188.5-.313 1.344-.375 2.532a68.391 68.391 0 0 0-.047 2.906v1.5c0 1.25.016 2.219.047 2.906.062 1.156.187 2 .375 2.531.406.97 1.078 1.641 2.015 2.016.532.188 1.375.313 2.532.375.687.031 1.656.047 2.906.047h1.5c1.281 0 2.25-.016 2.906-.047 1.188-.062 2.031-.187 2.531-.375.97-.406 1.641-1.078 2.016-2.015Z"></path></g><defs><clipPath id="z"><path fill="#fff" d="M0 0h21v21H0z"></path></clipPath></defs></svg> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" fill="none" class="instagram"><g clip-path="url(#z)"><path fill="#313f68" d="M10.5 5.11c.969 0 1.867.242 2.695.726a5.406 5.406 0 0 1 1.969 1.969c.484.828.727 1.726.727 2.695 0 .969-.243 1.867-.727 2.695a5.405 5.405 0 0 1-1.969 1.969 5.245 5.245 0 0 1-2.695.727 5.245 5.245 0 0 1-2.695-.727 5.406 5.406 0 0 1-1.97-1.969A5.246 5.246 0 0 1 5.11 10.5c0-.969.243-1.867.727-2.695a5.407 5.407 0 0 1 1.969-1.97A5.246 5.246 0 0 1 10.5 5.11Zm0 8.906c.969 0 1.797-.344 2.484-1.032a3.386 3.386 0 0 0 1.032-2.484c0-.969-.344-1.797-1.032-2.484A3.386 3.386 0 0 0 10.5 6.984c-.969 0-1.797.344-2.484 1.032A3.386 3.386 0 0 0 6.984 10.5c0 .969.344 1.797 1.032 2.484a3.386 3.386 0 0 0 2.484 1.032Zm6.89-9.141a1.46 1.46 0 0 1-.398.89c-.234.25-.523.376-.867.376s-.64-.125-.89-.375a1.217 1.217 0 0 1-.376-.891c0-.344.125-.64.375-.89s.547-.376.891-.376.64.125.89.375.376.547.376.891Zm3.563 1.266c.031.875.047 2.328.047 4.359s-.023 3.492-.07 4.383c-.047.89-.18 1.664-.399 2.32a5.462 5.462 0 0 1-1.289 2.04 5.462 5.462 0 0 1-2.039 1.288c-.656.219-1.43.352-2.32.399-.89.047-2.352.07-4.383.07s-3.492-.023-4.383-.07c-.89-.047-1.664-.196-2.32-.446a4.996 4.996 0 0 1-2.04-1.242A5.463 5.463 0 0 1 .47 17.203c-.219-.656-.352-1.43-.399-2.32C.023 13.993 0 12.53 0 10.5s.023-3.492.07-4.383c.047-.89.18-1.664.399-2.32.281-.781.71-1.461 1.289-2.04A5.463 5.463 0 0 1 3.797.47C4.453.25 5.227.117 6.117.07 7.007.023 8.47 0 10.5 0s3.492.023 4.383.07c.89.047 1.664.18 2.32.399.781.281 1.461.71 2.04 1.289a5.462 5.462 0 0 1 1.288 2.039c.219.656.36 1.437.422 2.344Zm-2.25 10.547c.188-.532.313-1.375.375-2.532.031-.687.047-1.656.047-2.906v-1.5c0-1.281-.016-2.25-.047-2.906-.062-1.188-.187-2.032-.375-2.532-.375-.968-1.047-1.64-2.015-2.015-.5-.188-1.344-.313-2.532-.375a68.388 68.388 0 0 0-2.906-.047h-1.5c-1.25 0-2.219.016-2.906.047-1.157.062-2 .187-2.532.375-.968.375-1.64 1.047-2.015 2.015-.188.5-.313 1.344-.375 2.532a68.391 68.391 0 0 0-.047 2.906v1.5c0 1.25.016 2.219.047 2.906.062 1.156.187 2 .375 2.531.406.97 1.078 1.641 2.015 2.016.532.188 1.375.313 2.532.375.687.031 1.656.047 2.906.047h1.5c1.281 0 2.25-.016 2.906-.047 1.188-.062 2.031-.187 2.531-.375.97-.406 1.641-1.078 2.016-2.015Z"></path></g><defs><clipPath id="z"><path fill="#fff" d="M0 0h21v21H0z"></path></clipPath></defs></svg> 
                         </li> 
                         <li> 
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 22" fill="none" class="youtube"><path fill="#EDEDED" d="M29.6 3.51c.252 1.021.431 2.572.539 4.653L30.193 11l-.054 2.837c-.108 2.119-.287 3.689-.538 4.71a4.005 4.005 0 0 1-.969 1.702 3.693 3.693 0 0 1-1.668 1.021c-.933.265-3.122.454-6.566.568l-4.898.057-4.898-.057c-3.444-.114-5.633-.303-6.565-.568a3.692 3.692 0 0 1-1.669-1.02 4.004 4.004 0 0 1-.969-1.703c-.25-1.021-.43-2.591-.538-4.71L.807 11c0-.832.018-1.778.054-2.837.108-2.08.287-3.632.538-4.653.18-.681.503-1.267.97-1.76A3.692 3.692 0 0 1 4.036.73C4.969.464 7.158.275 10.602.161L15.5.105l4.898.057c3.444.114 5.633.303 6.566.567.645.19 1.202.53 1.668 1.022.466.492.79 1.078.969 1.759ZM12.487 15.653 20.182 11l-7.696-4.596v9.249Z"></path></svg> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 22" fill="none" class="youtube"><path fill="#313f68" d="M29.6 3.51c.252 1.021.431 2.572.539 4.653L30.193 11l-.054 2.837c-.108 2.119-.287 3.689-.538 4.71a4.005 4.005 0 0 1-.969 1.702 3.693 3.693 0 0 1-1.668 1.021c-.933.265-3.122.454-6.566.568l-4.898.057-4.898-.057c-3.444-.114-5.633-.303-6.565-.568a3.692 3.692 0 0 1-1.669-1.02 4.004 4.004 0 0 1-.969-1.703c-.25-1.021-.43-2.591-.538-4.71L.807 11c0-.832.018-1.778.054-2.837.108-2.08.287-3.632.538-4.653.18-.681.503-1.267.97-1.76A3.692 3.692 0 0 1 4.036.73C4.969.464 7.158.275 10.602.161L15.5.105l4.898.057c3.444.114 5.633.303 6.566.567.645.19 1.202.53 1.668 1.022.466.492.79 1.078.969 1.759ZM12.487 15.653 20.182 11l-7.696-4.596v9.249Z"></path></svg> 
                         </li> 
                         <li> 
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 28" fill="none" class="tiktok"><path fill="#EDEDED" fill-rule="evenodd" d="M17.5 0c.5 4 2.7 6.3 6.5 6.6v4.5c-2.2.2-4.2-.5-6.5-1.9v8.4c0 10.6-11.6 13.9-16.2 6.3C-1.7 19 .2 10.4 9.7 10v4.7c-.7.1-1.5.3-2.2.6-2.1.7-3.3 2.1-3 4.5.6 4.6 9 5.9 8.3-3V0h4.7Z" clip-rule="evenodd"></path></svg> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 28" fill="none" class="tiktok"><path fill="#313f68" fill-rule="evenodd" d="M17.5 0c.5 4 2.7 6.3 6.5 6.6v4.5c-2.2.2-4.2-.5-6.5-1.9v8.4c0 10.6-11.6 13.9-16.2 6.3C-1.7 19 .2 10.4 9.7 10v4.7c-.7.1-1.5.3-2.2.6-2.1.7-3.3 2.1-3 4.5.6 4.6 9 5.9 8.3-3V0h4.7Z" clip-rule="evenodd"></path></svg> 
                         </li> 
                         <li> 
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" fill="none" class="spotify"><path fill="#EDEDED" d="M12.5.875c2.094 0 4.031.523 5.813 1.57a11.746 11.746 0 0 1 4.242 4.242 11.268 11.268 0 0 1 1.57 5.813c0 2.094-.523 4.031-1.57 5.813a11.746 11.746 0 0 1-4.242 4.242 11.269 11.269 0 0 1-5.813 1.57c-2.094 0-4.031-.523-5.813-1.57a11.746 11.746 0 0 1-4.242-4.242A11.27 11.27 0 0 1 .875 12.5c0-2.094.523-4.031 1.57-5.813a11.747 11.747 0 0 1 4.242-4.242A11.269 11.269 0 0 1 12.5.875Zm4.734 17.11c.188 0 .352-.071.492-.212a.701.701 0 0 0 .212-.515c0-.203-.04-.36-.118-.469a1.153 1.153 0 0 0-.351-.305c-3-1.78-6.703-2.187-11.11-1.218-.406.093-.609.359-.609.796 0 .188.062.352.187.493.125.14.297.21.516.21.094 0 .25-.015.469-.046l.094-.047c3.875-.813 7.109-.438 9.703 1.125.187.125.36.187.515.187ZM18.5 14.89a.86.86 0 0 0 .633-.258.86.86 0 0 0 .258-.633c0-.406-.172-.719-.516-.938-1.156-.687-2.453-1.21-3.89-1.57a18.29 18.29 0 0 0-4.454-.539c-1.531 0-3.047.203-4.547.61-.5.156-.75.484-.75.984 0 .25.094.46.282.633a.941.941 0 0 0 .656.258c.094 0 .219-.016.375-.047l.187-.047c1.875-.531 3.86-.656 5.954-.375 1.968.281 3.703.86 5.203 1.734l.093.047c.188.094.36.14.516.14Zm1.453-3.563c.281 0 .531-.101.75-.305a1.01 1.01 0 0 0 .328-.773c0-.469-.203-.828-.61-1.078-1.28-.719-2.78-1.281-4.5-1.688a23.065 23.065 0 0 0-5.108-.562c-2.063 0-3.907.25-5.532.75a1.124 1.124 0 0 0-.562.375c-.157.187-.235.43-.235.726 0 .297.102.555.305.774.203.219.461.328.773.328.125 0 .297-.031.516-.094l.094-.047c1.969-.53 4.219-.672 6.75-.422 2.625.25 4.765.86 6.422 1.829.187.125.39.187.61.187Z"></path></svg> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" fill="none" class="spotify"><path fill="#313f68" d="M12.5.875c2.094 0 4.031.523 5.813 1.57a11.746 11.746 0 0 1 4.242 4.242 11.268 11.268 0 0 1 1.57 5.813c0 2.094-.523 4.031-1.57 5.813a11.746 11.746 0 0 1-4.242 4.242 11.269 11.269 0 0 1-5.813 1.57c-2.094 0-4.031-.523-5.813-1.57a11.746 11.746 0 0 1-4.242-4.242A11.27 11.27 0 0 1 .875 12.5c0-2.094.523-4.031 1.57-5.813a11.747 11.747 0 0 1 4.242-4.242A11.269 11.269 0 0 1 12.5.875Zm4.734 17.11c.188 0 .352-.071.492-.212a.701.701 0 0 0 .212-.515c0-.203-.04-.36-.118-.469a1.153 1.153 0 0 0-.351-.305c-3-1.78-6.703-2.187-11.11-1.218-.406.093-.609.359-.609.796 0 .188.062.352.187.493.125.14.297.21.516.21.094 0 .25-.015.469-.046l.094-.047c3.875-.813 7.109-.438 9.703 1.125.187.125.36.187.515.187ZM18.5 14.89a.86.86 0 0 0 .633-.258.86.86 0 0 0 .258-.633c0-.406-.172-.719-.516-.938-1.156-.687-2.453-1.21-3.89-1.57a18.29 18.29 0 0 0-4.454-.539c-1.531 0-3.047.203-4.547.61-.5.156-.75.484-.75.984 0 .25.094.46.282.633a.941.941 0 0 0 .656.258c.094 0 .219-.016.375-.047l.187-.047c1.875-.531 3.86-.656 5.954-.375 1.968.281 3.703.86 5.203 1.734l.093.047c.188.094.36.14.516.14Zm1.453-3.563c.281 0 .531-.101.75-.305a1.01 1.01 0 0 0 .328-.773c0-.469-.203-.828-.61-1.078-1.28-.719-2.78-1.281-4.5-1.688a23.065 23.065 0 0 0-5.108-.562c-2.063 0-3.907.25-5.532.75a1.124 1.124 0 0 0-.562.375c-.157.187-.235.43-.235.726 0 .297.102.555.305.774.203.219.461.328.773.328.125 0 .297-.031.516-.094l.094-.047c1.969-.53 4.219-.672 6.75-.422 2.625.25 4.765.86 6.422 1.829.187.125.39.187.61.187Z"></path></svg> 
                         </li>
                     </ul>
-                </div>
-            </div>
-        </div>
+                </section>
+            </article>
+        </section>
+        <a href="index.html">
+            <img src="images/mysertyland_logo_header.png" alt="Mysteryland logo geel">
+        </a>
 
-        <div class="header-content">
-            <a href="index.html">
-                <img src="images/mysertyland_logo_header.png" alt="">
-            </a>
-            <div class="track">
-                <div class="animatie">
-                    <h1>FAQ</h1>
-                    <img src="images/animatie.gif" alt="" class="faq-gif">
-                </div>
-            </div>
-            <section class="menu-bar">
-                <button class="hamburger" aria-label="menu" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <button class="pre-register">PRE-REGISTER</button>
-            </section>
-        </div>
+        <!-- Infinity carrousel gemaakt met behulp van Youtube, 
+         Damian de studentassistent had me via Teams deze video 
+         gedeeld en hiermee is het me gelukt om de animatie te laten werken 
+         "Build Infinite Carousel Animations in 4 Minutes: https://www.youtube.com/watch?v=KD1Yo8a_Qis" -->
+        <section class="carousel"> 
+            <h2 class="visually-hidden">FAQ banner carousel</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+            <article class="group">
+                <h1>FAQ</h1>
+                <img src="images/animatie.gif" alt="animatie gif" class="faq-gif">
+                <h1>FAQ</h1>
+                <img src="images/animatie.gif" alt="animatie gif" class="faq-gif">
+                <h1>FAQ</h1>
+                <img src="images/animatie.gif" alt="animatie gif" class="faq-gif">
+                <h1>FAQ</h1>
+                <img src="images/animatie.gif" alt="animatie gif" class="faq-gif">
+            </article> 
+            <article class="group" aria-hidden="true">
+                <h1>FAQ</h1>
+                <img src="images/animatie.gif" alt="animatie gif" class="faq-gif">
+                <h1>FAQ</h1>
+                <img src="images/animatie.gif" alt="animatie gif" class="faq-gif">
+                <h1>FAQ</h1>
+                <img src="images/animatie.gif" alt="animatie gif" class="faq-gif">
+                <h1>FAQ</h1>
+                <img src="images/animatie.gif" alt="animatie gif" class="faq-gif">
+            </article>   
+        </section>
+        <section>
+            <h2 class="visually-hidden">Hamburger menu en registratie knoppen</h2> <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+            <button aria-label="menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button>PRE-REGISTER</button>
+        </section>
     </header>
-
     <main>
-        <h4>WHAT WILL HAPPEN IN 2026?</h4>
-        <p>
-            We are taking a break in 2026, a creative pause to shape the future. We will be back in 2027.
-        </p>
-        <h4>WHY ARE YOU TAKING A BREAK?</h4>
-        <p>
-            The main reason for taking a step back is the need for a future-proof concept – and the time and mental space required to develop that. Creating something completely new and innovative is nearly impossible when also running a full-scale festival production simultaneously. 
-        </p>
-        <p>
-            As the world’s longest-standing dance festival, we feel a strong responsibility to deliver the absolute best to our fans: boundary-pushing production, unexpected stages and décor, innovative shows, and top-tier artists – all set on the most beautiful festival grounds of the Netherlands. That high bar, combined with the sharp rise in costs over the past few years, has led to a situation that’s no longer sustainable. Since the pandemic, nearly all hard event costs have doubled – from production materials to beverage supplies and staffing. On top of that, visitor preferences are shifting at a rapid pace. Revolutionary ideas and bold decisions are needed, and these can only be realized by taking the time and space to rethink the concept from the ground up. 
-        </p>
-        <p>
-            Over the past 32 years, Mysteryland has undergone many transformations, and now it’s time for the next one. 
-        </p>
-        <h4>LOCATION</h4>
-        <p>
-            Mysteryland is located in Haarlemmermeer, The Netherlands, about 25km South-West of Amsterdam and 5km from Amsterdam Airport Schiphol. Navigation address: Stelling, 2141 CP Vijfhuizen
-        </p>
-        <p>
-            The <strong>campsite</strong> is directly connected to our festival terrain. Navigation address of the campsite: Hoofdweg 543, Hoofddorp.
-        </p>
-        <h4>AGE</h4>
-        <p>
-            Mysteryland is a festival for adults (18+). Although we’d love to have each and every one of you, we can’t make any exceptions, not even if your birthday is the day after the festival. If your 18th birthday happens to be on the day of the festival, you’re more than welcome to celebrate this special day with us.
-        </p>
-        <h4>LOST & FOUND</h4>
-        <p>
-            If you've lost something at our festival, visit the website of iLost to see if your item has been found.
-        </p>
-        <h4>STATEMENT ON OWNERSHIP MYSTERYLAND</h4>
-        <p>
-            Update May 22nd: <br>
-            Together with our fellow festivals, we have expressed our dissatisfaction about KKR to Superstruct. This has led to the following commitment: <br>
-            All profits from Mysteryland, and other festivals within Superstruct, will not flow to our investors, including KKR. Instead, all profits will be used to support the development of these festivals. We are working on the practical implementation of this commitment.
-        </p>
-        <p>
-            Update May 19th: <br>
-            As pioneers of electronic music festivals, Mysteryland has been a place of freedom for over 30 years. Rooted in the belief that house music celebrates every form of self-expression, we create a universe of worlds where everyone is free to be themselves.
-        </p>
-        <p>
-            As a connecting factor between numerous partners and communities, we deeply value transparency and accountability. Unfortunately, we have unintentionally become entangled in something that contradicts our core beliefs. We recognize the ruling by the International Court of Justice, which found that Israel is plausibly committing genocide in Gaza and upholds systems of apartheid and occupation against the Palestinian people.
-        </p>
-        <p>
-            Mysteryland became part of Superstruct Entertainment, with the intention of enhancing the quality of our festival and ensuring a sustainable future for our event and the communities we serve. From the beginning, Superstruct has guaranteed that we maintain full independence when it comes to programming, artist selection, marketing, and most importantly our values.
-        </p>
-        <p>
-            In October 2024, a change in ownership took place at Superstruct when its former parent company sold its stake to a new investor: KKR. We had no involvement in this transaction and were only informed once it was finalized. Since then, information has come to light about unethical investments that are fundamentally opposed to the principles we stand for.
-        </p>
-        <p>
-            While we have no control over the business decisions or financial partnerships made at higher levels of ownership. We want to state this clearly: no ownership structure will ever define who we are or what we stand for. Our direction will always be shaped by our values.
-        </p>
-        <p>
-            We will continue to use our platform to support and amplify organizations, initiatives, and causes that align with our values, while uplifting the artists, partners, and communities that shape our events. No investor or corporate parent will ever define what Mysteryland represents.
-        </p>
-        <p>
-            This is an ongoing dialogue, and we’re deeply grateful to everybody who has taken the time to engage with us during this period. We thank you for speaking up and raising your concerns.
-        </p>
-        <p>
-            Since the beginning of Mysteryland, we have carefully curated our lineups and collaborated with hostingpartners and artists according to our own ethical standards. We remain committed to doing so as we build towards our next festival.
-        </p>
-        <p>
-            Mysteryland stands with our communities.
-        </p>
+        <section>
+            <h2 class="visually-hidden">FAQ vraag 1</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+            <button>
+                <span>WHAT WILL HAPPEN IN 2026?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 11" fill="none" class="faq-accordion-item__label-chevron"><path fill="#EDEDED" d="m0 2 1.827-2 7.16 7.333L16.149 0 18 2l-9.012 8.988L0 2Z"></path></svg>
+            </button>
+            <article>
+                <p>
+                    We are taking a break in 2026, a creative pause to shape the future. We will be back in 2027.
+                </p>
+            </article>
+        </section>
+        <section>
+            <h2 class="visually-hidden">FAQ vraag 2</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+            <button>
+                <span>WHY ARE YOU TAKING A BREAK?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 11" fill="none" class="faq-accordion-item__label-chevron"><path fill="#EDEDED" d="m0 2 1.827-2 7.16 7.333L16.149 0 18 2l-9.012 8.988L0 2Z"></path></svg>
+            </button>
+            <article>
+                <p>
+                    The main reason for taking a step back is the need for a future-proof concept – and the time and mental space required to develop that. Creating something completely new and innovative is nearly impossible when also running a full-scale festival production simultaneously. 
+                </p>
+                <p>
+                    As the world's longest-standing dance festival, we feel a strong responsibility to deliver the absolute best to our fans: boundary-pushing production, unexpected stages and décor, innovative shows, and top-tier artists – all set on the most beautiful festival grounds of the Netherlands. That high bar, combined with the sharp rise in costs over the past few years, has led to a situation that's no longer sustainable. Since the pandemic, nearly all hard event costs have doubled – from production materials to beverage supplies and staffing. On top of that, visitor preferences are shifting at a rapid pace. Revolutionary ideas and bold decisions are needed, and these can only be realized by taking the time and space to rethink the concept from the ground up. 
+                </p>
+                <p>
+                    Over the past 32 years, Mysteryland has undergone many transformations, and now it's time for the next one. 
+                </p>
+            </article>
+        </section>
+        <section>
+            <h2 class="visually-hidden">FAQ vraag 3</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+            <button>
+                <span>LOCATION</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 11" fill="none"><path fill="#EDEDED" d="m0 2 1.827-2 7.16 7.333L16.149 0 18 2l-9.012 8.988L0 2Z"></path></svg>
+            </button>
+            <article>
+                <p>
+                    Mysteryland is located in Haarlemmermeer, The Netherlands, about 25km South-West of Amsterdam and 5km from Amsterdam Airport Schiphol. Navigation address: <br> <a href="https://www.google.com/maps/place/Stelling,+2141+CP+Vijfhuizen/@52.3498042,4.6900054,4767m/data=!3m1!1e3!4m15!1m8!3m7!1s0x47c5e6722c688231:0x2b2845c61cfae711!2sStelling,+2141+CP+Vijfhuizen!3b1!8m2!3d52.3455403!4d4.6849529!16s%2Fg%2F1tf1n08p!3m5!1s0x47c5e6722c688231:0x2b2845c61cfae711!8m2!3d52.3455403!4d4.6849529!16s%2Fg%2F1tf1n08p?hl=nl&entry=ttu">Stelling, 2141 CP Vijfhuizen</a>
+                </p>
+                <p>
+                    The campsite is directly connected to our festival terrain. Navigation address of the campsite: <a href="https://www.google.com/maps/place/Hoofdweg+543,+2131+MT+Hoofddorp/@52.3147162,4.7000787,1422m/data=!3m2!1e3!4b1!4m6!3m5!1s0x47c5e6fec0ae081b:0xdae9311d4479f089!8m2!3d52.314713!4d4.704955!16s%2Fg%2F11k460_nxw?entry=tts&g_ep=EgoyMDI1MDgxMC4wIPu8ASoASAFQAw%3D%3D&skid=b1da6358-7bf9-4904-8664-0139a695076f">Hoofdweg 543, Hoofddorp</a>.
+                </p>
+            </article>
+        </section>
+        <section>
+            <h2 class="visually-hidden">FAQ vraag 4</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+            <button>
+                <span>AGE</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 11" fill="none"><path fill="#EDEDED" d="m0 2 1.827-2 7.16 7.333L16.149 0 18 2l-9.012 8.988L0 2Z"></path></svg>
+            </button>
+            <article>
+                <p>
+                    Mysteryland is a festival for adults (18+). Although we'd love to have each and every one of you, we can't make any exceptions, not even if your birthday is the day after the festival. If your 18th birthday happens to be on the day of the festival, you're more than welcome to celebrate this special day with us.
+                </p>
+            </article>
+        </section>
+        <section>
+            <h2 class="visually-hidden">FAQ vraag 5</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+            <button>
+                <span>LOST & FOUND</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 11" fill="none"><path fill="#EDEDED" d="m0 2 1.827-2 7.16 7.333L16.149 0 18 2l-9.012 8.988L0 2Z"></path></svg>
+            </button>
+            <article>
+                <p>
+                    If you've lost something at our festival, visit the website of <a href="https://ilost.co/nl/org/mysteryland-2">iLost</a> to see if your item has been found.
+                </p>
+            </article>
+        </section>
+        <section>
+            <h2 class="visually-hidden">FAQ vraag 6</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+            <button>
+                <span>STATEMENT ON OWNERSHIP MYSTERYLAND</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 11" fill="none"><path fill="#EDEDED" d="m0 2 1.827-2 7.16 7.333L16.149 0 18 2l-9.012 8.988L0 2Z"></path></svg>
+            </button>
+            <article>
+                <p>
+                    Update May 22nd: <br> Together with our fellow festivals, we have expressed our dissatisfaction about KKR to Superstruct. This has led to the following commitment: <br> All profits from Mysteryland, and other festivals within Superstruct, will not flow to our investors, including KKR. Instead, all profits will be used to support the development of these festivals. We are working on the practical implementation of this commitment.
+                </p>
+                <p>
+                    Update May 19th: <br> As pioneers of electronic music festivals, Mysteryland has been a place of freedom for over 30 years. Rooted in the belief that house music celebrates every form of self-expression, we create a universe of worlds where everyone is free to be themselves.
+                </p>
+                <p>
+                    As a connecting factor between numerous partners and communities, we deeply value transparency and accountability. Unfortunately, we have unintentionally become entangled in something that contradicts our core beliefs. We recognize the ruling by the International Court of Justice, which found that Israel is plausibly committing genocide in Gaza and upholds systems of apartheid and occupation against the Palestinian people.
+                </p>
+                <p>
+                    Mysteryland became part of Superstruct Entertainment, with the intention of enhancing the quality of our festival and ensuring a sustainable future for our event and the communities we serve. From the beginning, Superstruct has guaranteed that we maintain full independence when it comes to programming, artist selection, marketing, and most importantly our values.
+                </p>
+                <p>
+                    In October 2024, a change in ownership took place at Superstruct when its former parent company sold its stake to a new investor: KKR. We had no involvement in this transaction and were only informed once it was finalized. Since then, information has come to light about unethical investments that are fundamentally opposed to the principles we stand for.
+                </p>
+                <p>
+                    While we have no control over the business decisions or financial partnerships made at higher levels of ownership. We want to state this clearly: no ownership structure will ever define who we are or what we stand for. Our direction will always be shaped by our values.
+                </p>
+                <p>
+                    We will continue to use our platform to support and amplify organizations, initiatives, and causes that align with our values, while uplifting the artists, partners, and communities that shape our events. No investor or corporate parent will ever define what Mysteryland represents.
+                </p>
+                <p>
+                    This is an ongoing dialogue, and we're deeply grateful to everybody who has taken the time to engage with us during this period. We thank you for speaking up and raising your concerns.
+                </p>
+                <p>
+                    Since the beginning of Mysteryland, we have carefully curated our lineups and collaborated with hostingpartners and artists according to our own ethical standards. We remain committed to doing so as we build towards our next festival.
+                </p>
+                <p>
+                    Mysteryland stands with our communities.
+                </p>
+            </article>
+        </section>
         <h2>UNLOCK A NEW MYSTERY</h2>
-        <p>
+        <p class="tekst_centreren">
             Subscribe to our newsletter<br>
             and receive the latest updates
         </p>
-        <button class="subscribe">
+        <button>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.31 8.31"><path d="m0 7.21 5.8-5.8-4.39.03L1.46 0h6.85v6.83l-1.45.05.03-4.37-5.78 5.8L0 7.2Z" style="fill: rgb(237, 237, 237);"></path></svg>
             Subscribe
         </button>
     </main>
-
     <footer>
         <h4>FOLLOW US</h4>
         <ul>
@@ -147,7 +217,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="26" fill="none" class="facebook"><path fill="#EDEDED" d="M4.922 25h4.406V14.266h3.422L13.313 10H9.328V7.047c0-.688.125-1.188.375-1.5.313-.375.89-.563 1.735-.563h2.25V1.188C12.844 1.063 11.75 1 10.405 1c-1.656 0-2.984.492-3.984 1.477-1 .984-1.5 2.367-1.5 4.148V10h-3.61v4.266h3.61V25Z"></path></svg>
             </li>
             <li>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" fill="none" class="instagram"><g clip-path="url(#z)"><path fill="#EDEDED" d="M10.5 5.11c.969 0 1.867.242 2.695.726a5.406 5.406 0 0 1 1.969 1.969c.484.828.727 1.726.727 2.695 0 .969-.243 1.867-.727 2.695a5.405 5.405 0 0 1-1.969 1.969 5.245 5.245 0 0 1-2.695.727 5.245 5.245 0 0 1-2.695-.727 5.406 5.406 0 0 1-1.97-1.969A5.246 5.246 0 0 1 5.11 10.5c0-.969.243-1.867.727-2.695a5.407 5.407 0 0 1 1.969-1.97A5.246 5.246 0 0 1 10.5 5.11Zm0 8.906c.969 0 1.797-.344 2.484-1.032a3.386 3.386 0 0 0 1.032-2.484c0-.969-.344-1.797-1.032-2.484A3.386 3.386 0 0 0 10.5 6.984c-.969 0-1.797.344-2.484 1.032A3.386 3.386 0 0 0 6.984 10.5c0 .969.344 1.797 1.032 2.484a3.386 3.386 0 0 0 2.484 1.032Zm6.89-9.141a1.46 1.46 0 0 1-.398.89c-.234.25-.523.376-.867.376s-.64-.125-.89-.375a1.217 1.217 0 0 1-.376-.891c0-.344.125-.64.375-.89s.547-.376.891-.376.64.125.89.375.376.547.376.891Zm3.563 1.266c.031.875.047 2.328.047 4.359s-.023 3.492-.07 4.383c-.047.89-.18 1.664-.399 2.32a5.462 5.462 0 0 1-1.289 2.04 5.462 5.462 0 0 1-2.039 1.288c-.656.219-1.43.352-2.32.399-.89.047-2.352.07-4.383.07s-3.492-.023-4.383-.07c-.89-.047-1.664-.196-2.32-.446a4.996 4.996 0 0 1-2.04-1.242A5.463 5.463 0 0 1 .47 17.203c-.219-.656-.352-1.43-.399-2.32C.023 13.993 0 12.53 0 10.5s.023-3.492.07-4.383c.047-.89.18-1.664.399-2.32.281-.781.71-1.461 1.289-2.04A5.463 5.463 0 0 1 3.797.47C4.453.25 5.227.117 6.117.07 7.007.023 8.47 0 10.5 0s3.492.023 4.383.07c.89.047 1.664.18 2.32.399.781.281 1.461.71 2.04 1.289a5.462 5.462 0 0 1 1.288 2.039c.219.656.36 1.437.422 2.344Zm-2.25 10.547c.188-.532.313-1.375.375-2.532.031-.687.047-1.656.047-2.906v-1.5c0-1.281-.016-2.25-.047-2.906-.062-1.188-.187-2.032-.375-2.532-.375-.968-1.047-1.64-2.015-2.015-.5-.188-1.344-.313-2.532-.375a68.388 68.388 0 0 0-2.906-.047h-1.5c-1.25 0-2.219.016-2.906.047-1.157.062-2 .187-2.532.375-.968.375-1.64 1.047-2.015 2.015-.188.5-.313 1.344-.375 2.532a68.391 68.391 0 0 0-.047 2.906v1.5c0 1.25.016 2.219.047 2.906.062 1.156.187 2 .375 2.531.406.97 1.078 1.641 2.015 2.016.532.188 1.375.313 2.532.375.687.031 1.656.047 2.906.047h1.5c1.281 0 2.25-.016 2.906-.047 1.188-.062 2.031-.187 2.531-.375.97-.406 1.641-1.078 2.016-2.015Z"></path></g><defs><clipPath id="z"><path fill="#fff" d="M0 0h21v21H0z"></path></clipPath></defs></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" fill="none" class="instagram"><g clip-path="url(#z)"><path fill="#EDEDED" d="M10.5 5.11c.969 0 1.867.242 2.695.726a5.406 5.406 0 0 1 1.969 1.969c.484.828.727 1.726.727 2.695 0 .969-.243 1.867-.727 2.695a5.405 5.405 0 0 1-1.969 1.969 5.245 5.245 0 0 1-2.695.727 5.245 5.245 0 0 1-2.695-.727 5.406 5.406 0 0 1-1.97-1.969A5.246 5.246 0 0 1 5.11 10.5c0-.969.243-1.867.727-2.695a5.407 5.407 0 0 1 1.969-1.97A5.246 5.246 0 0 1 10.5 5.11Zm0 8.906c.969 0 1.797-.344 2.484-1.032a3.386 3.386 0 0 0 1.032-2.484c0-.969-.344-1.797-1.032-2.484A3.386 3.386 0 0 0 10.5 6.984c-.969 0-1.797.344-2.484 1.032A3.386 3.386 0 0 0 6.984 10.5c0 .969.344 1.797 1.032 2.484a3.386 3.386 0 0 0 2.484 1.032Zm6.89-9.141a1.46 1.46 0 0 1-.398.89c-.234.25-.523.376-.867.376s-.64-.125-.89-.375a1.217 1.217 0 0 1-.376-.891c0-.344.125-.64.375-.89s.547-.376.891-.376.64.125.89.375.376.547.376.891Zm3.563 1.266c.031.875.047 2.328.047 4.359s-.023 3.492-.07 4.383c-.047.89-.18 1.664-.399 2.32a5.462 5.462 0 0 1-1.289 2.04 5.462 5.462 0 0 1-2.039 1.288c-.656.219-1.43.352-2.32.399-.89.047-2.352.07-4.383.07s-3.492-.023-4.383-.07c-.89-.047-1.664-.196-2.32-.446a4.996 4.996 0 0 1-2.04-1.242A5.463 5.463 0 0 1 .47 17.203c-.219-.656-.352-1.43-.399-2.32C.023 13.993 0 12.53 0 10.5s.023-3.492.07-4.383c.047-.89.18-1.664.399-2.32.281-.781.71-1.461 1.289-2.04A5.463 5.463 0 0 1 3.797.47C4.453.25 5.227.117 6.117.07 7.007.023 8.47 0 10.5 0s3.492.023 4.383.07c.89.047 1.664.18 2.32.399.781.281 1.461.71 2.04 1.289a5.462 5.462 0 0 1 1.288 2.039c.219.656.36 1.437.422 2.344Zm-2.25 10.547c.188-.532.313-1.375.375-2.532.031-.687.047-1.656.047-2.906v-1.5c0-1.281-.016-2.25-.047-2.906-.062-1.188-.187-2.032-.375-2.532-.375-.968-1.047-1.64-2.015-2.015-.5-.188-1.344-.313-2.532-.375a68.388 68.388 0 0 0-2.906-.047h-1.5c-1.25 0-2.219.016-2.906.047-1.157.062-2 .187-2.532.375-.968.375-1.64 1.047-2.015 2.015-.188.5-.313 1.344-.375 2.532a68.391 68.391 0 0 0-.047 2.906v1.5c0 1.25.016 2.219.047 2.906.062 1.156.187 2 .375 2.531.406.97 1.078 1.641 2.015 2.016.532.188 1.375.313 2.532.375.687.031 1.656.047 2.906.047h1.5c1.281 0 2.25-.016 2.906-.047 1.188-.062 2.031-.187 2.531-.375.97-.406 1.641-1.078 2.016-2.015Z"></path></g><defs><clipPath id="z1"><path fill="#fff" d="M0 0h21v21H0z"></path></clipPath></defs></svg>
             </li>
             <li>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 22" fill="none" class="youtube"><path fill="#EDEDED" d="M29.6 3.51c.252 1.021.431 2.572.539 4.653L30.193 11l-.054 2.837c-.108 2.119-.287 3.689-.538 4.71a4.005 4.005 0 0 1-.969 1.702 3.693 3.693 0 0 1-1.668 1.021c-.933.265-3.122.454-6.566.568l-4.898.057-4.898-.057c-3.444-.114-5.633-.303-6.565-.568a3.692 3.692 0 0 1-1.669-1.02 4.004 4.004 0 0 1-.969-1.703c-.25-1.021-.43-2.591-.538-4.71L.807 11c0-.832.018-1.778.054-2.837.108-2.08.287-3.632.538-4.653.18-.681.503-1.267.97-1.76A3.692 3.692 0 0 1 4.036.73C4.969.464 7.158.275 10.602.161L15.5.105l4.898.057c3.444.114 5.633.303 6.566.567.645.19 1.202.53 1.668 1.022.466.492.79 1.078.969 1.759ZM12.487 15.653 20.182 11l-7.696-4.596v9.249Z"></path></svg>
@@ -156,15 +226,12 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 28" fill="none" class="tiktok"><path fill="#EDEDED" fill-rule="evenodd" d="M17.5 0c.5 4 2.7 6.3 6.5 6.6v4.5c-2.2.2-4.2-.5-6.5-1.9v8.4c0 10.6-11.6 13.9-16.2 6.3C-1.7 19 .2 10.4 9.7 10v4.7c-.7.1-1.5.3-2.2.6-2.1.7-3.3 2.1-3 4.5.6 4.6 9 5.9 8.3-3V0h4.7Z" clip-rule="evenodd"></path></svg>
             </li>
         </ul>
-
-        <div class="spotify-icon">        
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" fill="none" class="spotify"><path fill="#EDEDED" d="M12.5.875c2.094 0 4.031.523 5.813 1.57a11.746 11.746 0 0 1 4.242 4.242 11.268 11.268 0 0 1 1.57 5.813c0 2.094-.523 4.031-1.57 5.813a11.746 11.746 0 0 1-4.242 4.242 11.269 11.269 0 0 1-5.813 1.57c-2.094 0-4.031-.523-5.813-1.57a11.746 11.746 0 0 1-4.242-4.242A11.27 11.27 0 0 1 .875 12.5c0-2.094.523-4.031 1.57-5.813a11.747 11.747 0 0 1 4.242-4.242A11.269 11.269 0 0 1 12.5.875Zm4.734 17.11c.188 0 .352-.071.492-.212a.701.701 0 0 0 .212-.515c0-.203-.04-.36-.118-.469a1.153 1.153 0 0 0-.351-.305c-3-1.78-6.703-2.187-11.11-1.218-.406.093-.609.359-.609.796 0 .188.062.352.187.493.125.14.297.21.516.21.094 0 .25-.015.469-.046l.094-.047c3.875-.813 7.109-.438 9.703 1.125.187.125.36.187.515.187ZM18.5 14.89a.86.86 0 0 0 .633-.258.86.86 0 0 0 .258-.633c0-.406-.172-.719-.516-.938-1.156-.687-2.453-1.21-3.89-1.57a18.29 18.29 0 0 0-4.454-.539c-1.531 0-3.047.203-4.547.61-.5.156-.75.484-.75.984 0 .25.094.46.282.633a.941.941 0 0 0 .656.258c.094 0 .219-.016.375-.047l.187-.047c1.875-.531 3.86-.656 5.954-.375 1.968.281 3.703.86 5.203 1.734l.093.047c.188.094.36.14.516.14Zm1.453-3.563c.281 0 .531-.101.75-.305a1.01 1.01 0 0 0 .328-.773c0-.469-.203-.828-.61-1.078-1.28-.719-2.78-1.281-4.5-1.688a23.065 23.065 0 0 0-5.108-.562c-2.063 0-3.907.25-5.532.75a1.124 1.124 0 0 0-.562.375c-.157.187-.235.43-.235.726 0 .297.102.555.305.774.203.219.461.328.773.328.125 0 .297-.031.516-.094l.094-.047c1.969-.53 4.219-.672 6.75-.422 2.625.25 4.765.86 6.422 1.829.187.125.39.187.61.187Z"></path></svg>
-        </div>    
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 41" fill="none" class="footer__partners--idt"><path fill="#EDEDED" fill-rule="evenodd" d="m30.799 8.025-3.786-5.609-3.79 5.61L.75.915s20.501 11.382 26.196 20.918l.067.082.057-.082C32.764 12.298 53.25.916 53.25.916l-22.451 7.11ZM.75 40.052h2.864V28.598H.75v11.454ZM15.64 31.461H9.533v5.728h6.109s3.054.152 3.054-2.788-3.054-2.94-3.054-2.94Zm0 8.591H6.478V28.598h9.164s6.109 0 6.109 5.727-6.11 5.727-6.11 5.727ZM53.25 31.461h-6.11v8.591h-3.054v-8.59h-6.109v-2.864H53.25v2.863ZM27.477 37.189c.08-.646.55-1.62 1.528-2.148.814.607 1.943 1.273 3.054 2.148h-4.582Zm8.4-2.864v2.864l-6.872-5.728h6.872v-2.863h-8.4c-.763 0-2.29.716-2.29 2.147 0 1.432 1.527 2.148 1.527 2.148-.764 0-3.055 2.936-3.055 5.727v1.432h15.273v-5.727h-3.055Z" clip-rule="evenodd"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" fill="none"><path fill="#EDEDED" d="M12.5.875c2.094 0 4.031.523 5.813 1.57a11.746 11.746 0 0 1 4.242 4.242 11.268 11.268 0 0 1 1.57 5.813c0 2.094-.523 4.031-1.57 5.813a11.746 11.746 0 0 1-4.242 4.242 11.269 11.269 0 0 1-5.813 1.57c-2.094 0-4.031-.523-5.813-1.57a11.746 11.746 0 0 1-4.242-4.242A11.27 11.27 0 0 1 .875 12.5c0-2.094.523-4.031 1.57-5.813a11.747 11.747 0 0 1 4.242-4.242A11.269 11.269 0 0 1 12.5.875Zm4.734 17.11c.188 0 .352-.071.492-.212a.701.701 0 0 0 .212-.515c0-.203-.04-.36-.118-.469a1.153 1.153 0 0 0-.351-.305c-3-1.78-6.703-2.187-11.11-1.218-.406.093-.609.359-.609.796 0 .188.062.352.187.493.125.14.297.21.516.21.094 0 .25-.015.469-.046l.094-.047c3.875-.813 7.109-.438 9.703 1.125.187.125.36.187.515.187ZM18.5 14.89a.86.86 0 0 0 .633-.258.86.86 0 0 0 .258-.633c0-.406-.172-.719-.516-.938-1.156-.687-2.453-1.21-3.89-1.57a18.29 18.29 0 0 0-4.454-.539c-1.531 0-3.047.203-4.547.61-.5.156-.75.484-.75.984 0 .25.094.46.282.633a.941.941 0 0 0 .656.258c.094 0 .219-.016.375-.047l.187-.047c1.875-.531 3.86-.656 5.954-.375 1.968.281 3.703.86 5.203 1.734l.093.047c.188.094.36.14.516.14Zm1.453-3.563c.281 0 .531-.101.75-.305a1.01 1.01 0 0 0 .328-.773c0-.469-.203-.828-.61-1.078-1.28-.719-2.78-1.281-4.5-1.688a23.065 23.065 0 0 0-5.108-.562c-2.063 0-3.907.25-5.532.75a1.124 1.124 0 0 0-.562.375c-.157.187-.235.43-.235.726 0 .297.102.555.305.774.203.219.461.328.773.328.125 0 .297-.031.516-.094l.094-.047c1.969-.53 4.219-.672 6.75-.422 2.625.25 4.765.86 6.422 1.829.187.125.39.187.61.187Z"></path></svg>    
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 41" fill="none"><path fill="#EDEDED" fill-rule="evenodd" d="m30.799 8.025-3.786-5.609-3.79 5.61L.75.915s20.501 11.382 26.196 20.918l.067.082.057-.082C32.764 12.298 53.25.916 53.25.916l-22.451 7.11ZM.75 40.052h2.864V28.598H.75v11.454ZM15.64 31.461H9.533v5.728h6.109s3.054.152 3.054-2.788-3.054-2.94-3.054-2.94Zm0 8.591H6.478V28.598h9.164s6.109 0 6.109 5.727-6.11 5.727-6.11 5.727ZM53.25 31.461h-6.11v8.591h-3.054v-8.59h-6.109v-2.864H53.25v2.863ZM27.477 37.189c.08-.646.55-1.62 1.528-2.148.814.607 1.943 1.273 3.054 2.148h-4.582Zm8.4-2.864v2.864l-6.872-5.728h6.872v-2.863h-8.4c-.763 0-2.29.716-2.29 2.147 0 1.432 1.527 2.148 1.527 2.148-.764 0-3.055 2.936-3.055 5.727v1.432h15.273v-5.727h-3.055Z" clip-rule="evenodd"></path></svg>
         <p>
             @2025 Mysteryland. All rights reserved.
         </p>
-        <ul class="footer-links">
+        <ul>
             <li>
                 <a href="#">Privacy policy</a>
             </li>
@@ -172,7 +239,7 @@
                 <a href="#">Terms & Conditions</a>
             </li>
             <li>
-                <a href="#">FAQ</a>
+                <a href="faq.html">FAQ</a>
             </li>
             <li>
                 <a href="#">Contact</a>
@@ -182,6 +249,106 @@
             </li>
         </ul>
     </footer>
+    <div class="gradient-overlay"></div>
+    <section class="overlay" id="preregOverlay">
+        <h2 class="visually-hidden">Pre-registratie popup</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+        <section id="preregPopup">
+            <section class="popup-header">
+                <h2 class="visually-hidden">Popup header</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+                <img src="images/logo_mysertyland_wit.png" alt="Mysteryland logo wit" class="popup-logo">
+                
+                <section class="taalkeuze">
+                    <h2 class="visually-hidden">Taal selectie</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+                    <button id="taal_button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 -960 960 960" fill="white" stroke="none">
+                            <path d="M480-80q-84 0-157-31.5T196-197q-54-54-85-127.5T80-482q0-84 31-156.5T196-765q54-54 127-84.5T480-880q84 0 157 30.5T764-765q54 54 85 126.5T880-482q0 84-31 157.5T764-197q-54 54-127 85.5T480-80Zm0-58q35-36 58.5-82.5T577-331H384q14 60 37.5 108t58.5 85Zm-85-12q-25-38-43-82t-30-99H172q38 71 88 111.5T395-150Zm171-1q72-23 129.5-69T788-331H639q-13 54-30.5 98T566-151ZM152-391h159q-3-27-3.5-48.5T307-482q0-25 1-44.5t4-43.5H152q-7 24-9.5 43t-2.5 45q0 26 2.5 46.5T152-391Zm221 0h215q4-31 5-50.5t1-40.5q0-20-1-38.5t-5-49.5H373q-4 31-5 49.5t-1 38.5q0 21 1 40.5t5 50.5Zm275 0h160q7-24 9.5-44.5T820-482q0-26-2.5-45t-9.5-43H649q3 35 4 53.5t1 34.5q0 22-1.5 41.5T648-391Zm-10-239h150q-33-69-90.5-115T565-810q25 37 42.5 80T638-630Zm-254 0h194q-11-53-37-102.5T480-820q-32 27-54 71t-42 119Zm-212 0h151q11-54 28-96.5t43-82.5q-75 19-131 64t-91 115Z"></path>
+                        </svg>
+                        <span id="currentLang">EN</span>
+                    </button>
+                    
+                    <button id="closePopup">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                    
+                    <section id="taalDropdown">
+                        <h2 class="visually-hidden">Taal opties</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+                        <button data-lang="en">English (EN)</button>
+                        <button data-lang="nl">Nederlands (NL)</button>
+                    </section>
+                </section>
+            </section>
+            
+            <section>
+                <h2>ENTER YOUR EMAIL</h2>
+                
+                <!-- https://www.w3schools.com/html/html_forms.asp -->
+                <form id="preregForm">
+                    <label for="emailInput">Your email</label>
+                    <input type="email" id="emailInput" placeholder="" required>
+                    <button type="submit" class="confirm-btn">Confirm</button>
+                </form>
+                <!-- EINDE FORM -->
+            </section>
+        </section>
+    </section>
+    <section class="newsletter-overlay">
+        <h2 class="visually-hidden">Nieuwsbrief popup</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+        <section class="newsletter-popup">
+            <section>
+                <h2 class="visually-hidden">Taal keuze</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+                <label>
+                    <select class="taal_selecteren">
+                        <option>English</option>
+                        <option>Nederlands</option>
+                    </select>
+                </label>
+            </section>
+    
+            <h5>Newsletter</h5>
+            <p>Sign up for the Mysteryland newsletter and be the first to know about important announcements.</p>
+            
+            <!-- https://www.w3schools.com/html/html_forms.asp -->
+            <form>
+                <label>
+                    <input type="text" class="input-field" placeholder="Your first name" required>
+                </label>
+                <label>
+                    <input type="email" class="input-field" placeholder="Email" required>
+                </label>
+                
+                <section class="schakelaar">
+                    <h2 class="visually-hidden">Nieuwsbrief schakelaar</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+                    <p>Newsletter</p>
+                    <label class="schakelaar_switch">
+                        <input type="checkbox" class="newsletter-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </section>
+
+                <section class="schakelaar">
+                    <h2 class="visually-hidden">Voorwaarden schakelaar</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+                    <p>
+                        I agree to the Mysteryland Terms <br> and Conditions and Privacy Policy <br>
+                        and would like to subscribe for the <br> newsletter.
+                    </p>
+                    <label class="schakelaar_switch">
+                        <input type="checkbox" class="terms-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </section>
+
+                <button type="submit" class="continue-btn" disabled>Continue</button>
+            </form>
+            <!-- EINDE FORM -->
+        </section>
+    </section>
+    <section class="loading-screen" id="loadingScreen">
+        <h2 class="visually-hidden">Laadscherm</h2>  <!-- Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom -->
+        <img src="images/mysertyland_logo_header.png" alt="Mysteryland logo geel">
+    </section>
+    <script src="javascript.js"></script>
 </body>
-<script src="javascript.js"></script>
 </html>
