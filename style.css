@@ -14,33 +14,30 @@
 /*  Studentassistent Damian heeft me geholpen om de Fonts van de echte mysteryland website
 te krijgen en heeft me geholpen om deze te importeren naar mijn CSS via het mapje Fonts
 met hierin de gedownloade Fonts */
-@font-face {
-	font-display: swap;
-	font-family: 'Mystery';
-	font-style: normal;
-	font-weight: 400;
-	src: url(./fonts/mysteryfont.woff2) format("woff2"),
-		url(./fonts/mysteryfont.woff2) format("woff")
+@font-face{
+    font-family: "Mystery";
+    font-weight: 300;
+    src: url(./fonts/mysteryfont.woff2) format('woff2'); 
 }
 
 @font-face{
     font-family: "haffer";
-    src: url(/fonts/haffer-medium.woff2) format('woff2'); 
+    src: url(./fonts/haffer-medium.woff2) format('woff2'); 
 }
 
 @font-face{
     font-family: "fk screamer";
-    src: url(/fonts/fk-screamer-upright.woff2) format('woff2'); 
+    src: url(./fonts/fk-screamer-upright.woff2) format('woff2'); 
 }
 
 @font-face{
     font-family: "tobias-regular";
-    src: url(/fonts/tobias-regular.woff2) format('woff2'); 
+    src: url(./fonts/tobias-regular.woff2) format('woff2'); 
 }
 
 @font-face{
     font-family: "Raleway";
-    src: url(/fonts/raleway_medium.woff2) format('woff2'); 
+    src: url(./fonts/raleway_medium.woff2) format('woff2'); 
 }
 
 /*  Thijn Glas heeft me uitgelegd hoe ik dit moest doen en waarom 
